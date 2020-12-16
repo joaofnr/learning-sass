@@ -10,12 +10,20 @@
   
   .destaque p {
     width: 30em;
+
+    @media (max-width: 980px) {
+      width: 100%;
+    }
   }
   
   .destaque p:first-child {
     width: 30em;
     font-size: 1.3em;
     line-height: 1.1;
+    
+    @media (max-width: 980px) {
+      width: 100%;
+    }
   }
   
   .destaque p:first-child:first-line {
