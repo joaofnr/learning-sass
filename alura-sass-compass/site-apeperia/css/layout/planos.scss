@@ -22,7 +22,7 @@
 .plano h3 {
   color: $cor-branca;
   font-size: 1.8em;
-  background: #66DDDD;
+  background: $cor-padrao;
   text-align: center;
   height: 2em;
   padding-top: .6em;
@@ -31,7 +31,7 @@
 
 .plano div {
   text-align: center;
-  color: #66DDDD;
+  color: $cor-padrao;
   font-size: 2.75em;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .plano button {
-  background: #66DDDD;
+  background: $cor-padrao;
   border: 0;
   color: $cor-branca;
   width: 210px;
