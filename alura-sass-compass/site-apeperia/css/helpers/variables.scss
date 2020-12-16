@@ -2,3 +2,12 @@
 $cor-padrao: darken(#96403E, 20);
 $cor-auxiliar: lighten(#96403E, 10);
 $cor-branca: white;
+$cor-confirmacao: green;
+
+// hue is from -360deg to 360deg
+$color-hue-red: adjust-hue(#FF0000,360deg);
+
+//saturation is with percentage - and we can omit the unit, too
+$color-confirm-saturate: saturate($cor-confirmacao, 50);
+
+$color-not-confirm: complement($cor-confirmacao);

@@ -29,6 +29,20 @@
   margin-top: 0;
 }
 
+
+.plano{
+  &:first-child h3{
+    color: $color-hue-red;
+  }
+  &:nth-child(1) h3{
+    color: $color-confirm-saturate;
+  }
+  &:last-child h3{
+    color: $color-not-confirm;
+  }
+}
+
+
 .plano div {
   text-align: center;
   color: $cor-padrao;
