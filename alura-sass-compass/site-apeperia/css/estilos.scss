@@ -1,7 +1,6 @@
 $cor-branca: white;
-$raio: 0.3em;
 
-@mixin borda-arredondada{
+@mixin borda-arredondada($raio: 0.3em){
   -webkit-border-radius: $raio;
   -moz-border-radius: $raio;
   -o-border-radius: $raio;
@@ -111,7 +110,7 @@ body {
     border: 0;
     padding: .6em;
     font-size: 1.2em;
-    @include borda-arredondada;
+    @include borda-arredondada(100px);
     @include sombra-padrao;
     font-weight: bold;
   }
