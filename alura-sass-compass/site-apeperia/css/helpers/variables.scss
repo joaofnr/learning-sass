@@ -4,6 +4,9 @@ $cor-auxiliar: lighten(#96403E, 10);
 $cor-branca: white;
 $cor-confirmacao: green;
 
+// small screen breakpoint
+$ponto-de-quebra: 960px;
+
 // hue is from -360deg to 360deg
 $color-hue-red: adjust-hue(#FF0000,360deg);
 
