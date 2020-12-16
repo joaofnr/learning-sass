@@ -11,7 +11,7 @@
   .destaque p {
     width: 30em;
 
-    @media (max-width: $ponto-de-quebra) {
+    @media #{$mq-mobile} {
       width: 100%;
     }
   }
@@ -21,7 +21,7 @@
     font-size: 1.3em;
     line-height: 1.1;
 
-    @media (max-width: $ponto-de-quebra) {
+    @media #{$mq-mobile} {
       width: 100%;
     }
   }
