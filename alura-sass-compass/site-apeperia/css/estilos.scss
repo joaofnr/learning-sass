@@ -1,5 +1,7 @@
+// VARIABLES
 $cor-branca: white;
 
+// MIXINS
 @mixin borda-arredondada($raio: 0.3em){
   -webkit-border-radius: $raio;
   -moz-border-radius: $raio;
@@ -11,6 +13,12 @@ $cor-branca: white;
 @mixin sombra-padrao{
   -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
+
+@mixin image-replacement{
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 /** Geral **/
@@ -148,9 +156,7 @@ body {
     display: inline-block;
     width: 50px;
     height: 60px;
-    text-indent: -9999px;
-    overflow: hidden;
-    background-repeat: no-repeat;
+    @include image-replacement;
     background-position: center;
     margin: 1em 1.5em 0 0;
   }
@@ -412,9 +418,7 @@ body {
     display: block;
     width: 55px;
     height: 55px;
-    text-indent: -9999px;
-    overflow: hidden;
-    background-repeat: no-repeat;
+    @include image-replacement;
     margin-left: 1em;
   }
   
